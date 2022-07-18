@@ -1,13 +1,173 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Mul i&display=swap');
+
+*{ 
+  padding: 0;
+  box-sizing:  border-box;
+  font-family: 'Mulkli', sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  background-color: white !important;
 }
+
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color:rgb(169, 250, 132) !important;
+}
+
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.brand-name:hover{
+  background-color: rgb(218, 192, 168) !important;
+  /* border:2px solid blue !important; */
+  color: white !important;
+  transform: scale(1.11) !important
+
+
+
+
+}
+
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid red;
+}
+
+.navbar a:hover{
+  color: #000000 !important;
+}
+@media (max-width: 991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+
+  .menu_active{
+    font-weight:bold;
+    border-bottom:none;
+  }
+}
+
+.getdtsrted{
+  font-size: 15;
+  background-color: bisque;
+  border:2px solid blue !important;
+  padding: 5px 20px !important;
+  transition: transform .2s;
+
+}
+.getdtsrted:hover{
+  background-color: black !important;
+  border:2px solid blue !important;
+  color: white !important;
+  transform: scale(1.11) !important
+
+
+
+}
+
+.homeImage{
+  height: 400px;
+  width: 520px;
+  margin-top: -100px;
+  border-radius: 18px;
+  box-shadow: 1.2px 1.5px 5px gray;
+  transition: transform .2s;
+  object-fit: cover;
+  
+}
+.homeImage:hover{
+  transform: scale(1.05)
+}
+
+/* .homeImage{
+  height: 400px;
+  width: 520px;
+  margin-top: -100px;
+  border-radius: 18px;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+} */
+
+.center{
+  margin-top: 170px;
+}
+
+#header{
+  width:100%;
+  height:80vh;
+  margin-top:70px;
+}
+
+#header h1{
+  margin:0 0 10px 0;
+  font-size: 48px;
+  color:black
+}
+
+#header .brand-name{
+  color:blue
+}
+
+#header h2{
+  color:rgb(236, 102, 102);
+  font-size: 24px;
+}
+
+.getdtsrted {
+  font-weight: 500px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30 px;
+  border-radious: 50px;
+  transition: 0.5;
+  color:rgb(218, 174, 134);
+  border: 2px solid orangered;
+  text-decoration: none;
+}
+
+#header .getdtsrted :hover{
+  background-color: #3498db;
+}
+
+.header-img{
+  text-align: right;
+}
+
+#header .animated {
+  animated: up-down 2sec ease-in-out infinite alternate-reverse both;
+}
+
+@-webKit-Keyframe up-dowwn {
+ 0%{
+
+  transform: translateY(10px);
+ }
+ 100% {
+  transform: translateY(-10px)
+ }
+ 
+}
+
+@Keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.sereviceImg{
+  height: 400px;
+}
+
+ .brand-name{
+  animated: up-down 2sec ease-in-out infinite alternate-reverse both;
+ }
+
